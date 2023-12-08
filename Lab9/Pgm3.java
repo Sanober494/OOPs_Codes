@@ -1,3 +1,7 @@
+/*Write a program to read a phone number as a string. It must then display the country code,
+and identify if the number is a landline number or a mobile phone and then the number,
+e.g. if the phone number is 00971558912308 – 00971 UAE Code 55 – mobile
+0097147629309 – 00971 UAE code 4 - landline*/
 import java.util.Scanner;
 
 public class Pgm3 {
