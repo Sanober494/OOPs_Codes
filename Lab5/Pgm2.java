@@ -1,3 +1,16 @@
+/*Create a class SavingsAccount. Use a static variable annualInterestrate to store the
+interest rate for all account holders. Each object of the class contains a private instance
+variable savingsBalance indicating the current amount in the account. Provide method
+calculateMonthlyInterest to calculate the monthly interest by multiplying the
+savingsBalance by annualInterestRate divided by 12.This interest should be added to
+the savingsBalance. Provide a static method modifyInterestRate that sets the annual
+interest rate to a new value.
+Write a program to test the SavingsAccount class. Instantiate three SavingsAccount
+objects. Set annualInterestRate to 4%, calculate the monthly interest for each account
+and print the new balance.Now set annualInterestrate to 5% and calculate the next
+month’s interest and print the new balance for all three accounts. You can create an
+array of three objects.*/
+
 import java.util.*;
 class SavingsAccount{
     static double annualIntRate=0.1;
