@@ -1,3 +1,14 @@
+/*Write a java program to store information for a showroom that has a class name a Car with attributes:
+Vehicle_id: String
+Cost: Float[]; stores base, exercise duty and sales tax for each car
+Total: float; stores total after calling calc_total
+Grand_total: float; stores price after subtracting discount
+calc_total() calculates total price (Base + Exercise duty + Sales tax)
+calc_grand_total() calculates the price after a discount of a 10% Diwali discount.
+In main method, Create an array of objects of Car.
+Now call calc_total() to calculate total. Then after call calc_grand_total() to calculate the price after the discount.
+Now Create a method which prints the details of the car with the highest grand price.
+Note the array of object store the detail of n number of employees*/
 package Lab7;
 import java.util.*;
 
