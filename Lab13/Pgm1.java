@@ -1,3 +1,7 @@
+/*a.WAJP to generate prime numbers between a given range of numbers.
+b.Modify the class Prime in Prime program to generate IllegalArgumentException if the argument
+passed to the constructor of the class Prime is negative.
+c.In the above define you own Exception class (Instead of IllegalArgumentException*/
 class NegativeNumberException extends Exception {
     public NegativeNumberException() {
         System.out.println("Start and end must be non-negative.");
