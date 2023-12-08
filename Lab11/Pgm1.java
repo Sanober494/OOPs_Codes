@@ -1,3 +1,6 @@
+/*Class Member is an abstract class. Class Society contains an array list which stores details of all members (both Standard
+Member and Senior Member). Society also has a method which calculates the total fee of all members stored in the
+array list.*/
 package Lab11;
 
 import java.util.*;
