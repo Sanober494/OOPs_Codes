@@ -1,3 +1,16 @@
+/*Define a class FlightDest which contains the flightNoand destination
+(both of type strings and accessible only within the class FlightDest).
+Define another class FlightInfo, which holds a member flightDestList(of
+type ArrayList to hold a list of FlightDestobjects).
+Provide the class FlightInfo,with member functions having the following
+signatures.
+publicFlightInfo();//initialize the FlightInfo class
+public void addFlightDestPair(String fNo, String dest); //adds the
+pair (fNo, dest ) to the flightDestList
+public ArrayList<String>getFlightsDest(String dest); //returns a
+list of flightNos for a given destination dest.
+Provide only the class FlightDestinationTester containing the main()
+method to test the usage of the FlightInfo class.*/
 package Lab8;
 import java.util.ArrayList;
 import java.util.Scanner;
