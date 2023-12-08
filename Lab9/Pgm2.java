@@ -1,4 +1,5 @@
-
+/*Write a program to read a line of text, tokenizes the line and only displays the tokens
+which start with the letter “b”.*/
 
 import java.util.*;
 
