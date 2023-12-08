@@ -1,3 +1,10 @@
+/*An election is contested by 5 candidates. The candidates are numbered 1 to 5 and the
+voting is done by marking the candidate number on the ballot paper. Write a program
+to read the ballots and count the votes cast for each candidate using an array variable
+count. In case a number read is outside the range of 1-5, the ballot should be considered
+as a spoilt ballot. The program should finally count the number of votes for each
+candidate along with a count of spoilt votes.*/
+
 import java.util.*;
 public class Pgm1{
     int votes[];
