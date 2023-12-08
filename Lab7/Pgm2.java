@@ -1,3 +1,8 @@
+
+/*Write a Java program which passes an int array as an argument, in the method we run a
+loop to traverse the passed array to look for all duplicate elements in the array, it then stores the
+element and count of all duplicate elements in a new array. This method then returns the new
+array back to main which prints the duplicate elements and their count.*/
 package Lab7;
 import java.util.ArrayList;
 import java.util.Scanner;
