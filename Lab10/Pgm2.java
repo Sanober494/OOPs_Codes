@@ -1,3 +1,14 @@
+/*Write a Java class Car assuming it has this constructor:
+public Car(double price, int year)
+and that the method calculateSalePrice ( )
+Write a Java class ClassicCar assuming it has this constructor:
+public ClassicCar (double price, int year)
+and that the method calculateSalePrice ( ) returns 10,000 as the sale price of the car.
+Write a Java class SportCar assuming it has this constructor:
+public SportCar(double price, int year)
+and that the method calculateSalePrice ( ) calculates the sale price of the car as follow:
+if year > 2000 then the sale price is 0.75 * its original price; if year > 1995 then the sale price
+is 0.5 * its original price; otherwise the sale price is 0.25 * its original price*/
 package Lab10;
 
 class Car{
