@@ -1,3 +1,11 @@
+/* A Java class is used to represent elements from the periodic table of elements. The details to
+be captured include atomic number, name of the element, chemical symbol, class, and
+atomic weight.
+e.g. 11 Sodium Na alkali metal 22.9898
+a.Now store the details of three different elements.
+b.You can have a method to display the details of all three elements as well as a method that
+displays details of all elements with an atomic weight >15 
+*/
 package Lab3;
 
 import java.util.Scanner;
