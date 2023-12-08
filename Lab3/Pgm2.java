@@ -1,3 +1,13 @@
+/*Write a Java program to simulate a guessing game. The game involves a game object and three
+player objects. The game generates a random number between 0 and 9, and the three player objects
+try to guess the number.
+You must then announce the result about which player/players was/were successful in guessing the
+correct number.
+Note: There are multiple ways to generate random numbers. One method is
+int targetNumber = (int) (Math.random() * 10); This generates one random number in the range
+from 0-9. You could of course generate numbers in the range from 0-100 but then the probability of
+guessing the right number would drop.*/
+
 package Lab3;
 
 
