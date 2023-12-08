@@ -1,5 +1,8 @@
+/*WAJP to create a student class which has member variables, name, age, year, id no. Use exception
+handling to check if name is a valid name( consisting of only upper case and lower case letters. Age to
+be less then 35, year to be only any one of the int values from 1-4 and id no to be 6 characters and of
+the specified format e.g. f0102U*/
 import java.util.*;
-
 
 class NameException extends Exception {
     public NameException() {
