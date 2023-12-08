@@ -1,4 +1,22 @@
-
+/*Define a class Book which contains private members name (type String), cost (type double). This class
+implements the comparable interface as shown below.
+class Book implements Comparable<Book> {
+private String name,
+private double cost;
+// fill in the constructor.
+// fill in the implementation to compare by name
+// Any other methods required..
+} // of class Book
+Define another class GeneralizedSearch, having a method search(), as shown below.
+class GeneralizedSearch {
+public static boolean search (Object[] arr, Object item) {
+// provide the implementation to return true or false,
+// depending on whether the item is present in arr or not.
+}
+}
+Define a class containing the main method, which creates an array of objects of class Book and uses the class
+GeneralizedSearch to search of a specific book (by name). Finally display the book details if present.
+Also implement the Comparator interface and sort the books on descending order of price and display.*/
 
 import java.util.*;
 import java.io.*;
