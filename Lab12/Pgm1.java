@@ -1,3 +1,30 @@
+/*Develop a JAVA program to simulate the movement of chess pieces on a chess board, using interfaces. Define an interface
+movable with a method move(String newPos). Further define an abstract class Piece, and classes for each
+type of chess piece (eg King, Queen etc) and override the method move(String newPos). (Pl refer to the sample
+implementation shown below)
+interface Movable() { void move(String newPos); }
+abstract class ChessPiece implements movable {
+String name; // eg “King”, “Queen” etc.
+String color; // “White”, “Black”
+String curPos; // “a1”,“c5” std chess board naming convention
+public ChessPiece (/*appropriate parameters */ ) { }
+}
+class King extends ChessPiece {
+/* appropriate implementation details */
+}
+In the main program create an ArrayList of Pieces, (any 3 of your choice) and simulate the movement on these pieces
+on the chess board. You need not check if the move is a legal move, just print the message <Color> <PieceName> moving
+from <curPos> to <newPos> as shown below.
+Eg: (Comp) : Created 3 chess Pieces (eg. King(White):1, Queen(Black):2 , Pawn(White):3).
+(Comp) : Enter which piece to be moved (0 to Quit) & new Position
+(User) : 1 a6
+(Comp) : White King moving from a7 to a6
+(Comp) : Enter which piece to be moved (0 to Quit) & new Position
+(User): 2 c5
+(Comp) : Black Queen moving from c2 to c5
+(Comp) : Enter which piece to be moved (0 to Quit) & new Position
+(User) : 0 0
+(Comp) : Bye, Thank you !!*/
 import java.util.*;
 
 interface movable
