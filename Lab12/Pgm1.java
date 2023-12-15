@@ -7,10 +7,10 @@ abstract class ChessPiece implements movable {
 String name; // eg “King”, “Queen” etc.
 String color; // “White”, “Black”
 String curPos; // “a1”,“c5” std chess board naming convention
-public ChessPiece (/*appropriate parameters */ ) { }
+public ChessPiece (appropriate parameters ) { }
 }
 class King extends ChessPiece {
-/* appropriate implementation details */
+appropriate implementation details 
 }
 In the main program create an ArrayList of Pieces, (any 3 of your choice) and simulate the movement on these pieces
 on the chess board. You need not check if the move is a legal move, just print the message <Color> <PieceName> moving
