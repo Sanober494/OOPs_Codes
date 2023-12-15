@@ -58,3 +58,72 @@ public class Pgm1 {
         scanner.close();
     }
 }
+
+// Another method solving-> using ArrayList instead
+
+import java.util.*;
+
+class Element {
+    int atomicNumber;
+    String name;
+    String symbol;
+    String classification;
+    double atomicWeight;
+
+    Element(int atomicNumber, String name, String symbol, String classification, double atomicWeight) {
+        this.atomicNumber = atomicNumber;
+        this.name = name;
+        this.symbol = symbol;
+        this.classification = classification;
+        this.atomicWeight = atomicWeight;
+    }
+
+   
+}
+
+public class pgm {
+    public static void displayElements(ArrayList<Element> elements) {
+        for (Element element : elements) {
+            System.out.println(element);
+        }
+    }
+
+    public static void d15(ArrayList<Element> elements, double weight) {
+        for (Element element : elements) {
+            if (element.atomicWeight > weight) {
+                System.out.println(element);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Element> elements = new ArrayList<>();
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Enter atomic number:");
+            int atomicNumber = sc.nextInt();
+            sc.nextLine();  // Consume the newline character
+            System.out.println("Enter name:");
+            String name = sc.nextLine();
+            System.out.println("Enter symbol:");
+            String symbol = sc.nextLine();
+            System.out.println("Enter classification:");
+            String classification = sc.nextLine();
+            System.out.println("Enter atomic weight:");
+            double atomicWeight = sc.nextDouble();
+
+            Element element = new Element(atomicNumber, name, symbol, classification, atomicWeight);
+            elements.add(element);
+        }
+
+        System.out.println("All Elements:");
+        displayElements(elements);
+
+        System.out.println("\nElements with Atomic Weight > 15:");
+        d15(elements, 15.0);
+
+        sc.close();
+    }
+}
+
