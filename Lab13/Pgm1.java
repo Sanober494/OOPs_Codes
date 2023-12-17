@@ -53,3 +53,52 @@ public class Pgm1 {
         }
     }
 }
+
+// Method two:
+
+
+class negPrime extends Exception {
+    public negPrime() {
+        System.out.println("Negative number encountered!");
+    }
+}
+
+class Prime {
+
+    public int n;
+    public int m;
+
+    public Prime(int n, int m) throws negPrime {
+        this.n = n;
+        this.m = m;
+        if (n < 0 || m < 0)
+            throw new negPrime();
+    }
+
+    public void genPrime() {
+        for (int i = n; i < m + 1; i++) {
+            int c = 0;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    c = 1;
+                }
+            }
+            if (c == 0) {
+                System.out.println(i);
+            }
+
+        }
+    }
+}
+
+class Pgm1 {
+    public static void main(String args[]) {
+        try {
+            Prime p = new Prime(10, 20);
+            p.genPrime();
+        } catch (negPrime e) {
+            System.out.println(e);
+        }
+
+    }
+}
