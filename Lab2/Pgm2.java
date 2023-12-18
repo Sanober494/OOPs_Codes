@@ -49,12 +49,56 @@ System.out.println("You have guessed the correct number!");}
 else {System.out.println("You have guessed the wrong number...");};
 scanner.close();
 
+}
+}
+
+//Method 2:
 
 
+import java.util.*;
 
+class Game {
 
+    public int ran = (int) (Math.random() * 10);
 
 
 }
+
+class Player {
+    public int player;
+
+    Player(int player) {
+        this.player = player;
+    }
+}
+
+class pgm {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter p1:");
+        int g1 = sc.nextInt();
+        Player p1 = new Player(g1);
+        System.out.println("Enter p2:");
+        int g2 = sc.nextInt();
+        Player p2 = new Player(g2);
+        System.out.println("Enter p3:");
+        int g3 = sc.nextInt();
+        Player p3 = new Player(g3);
+
+        Game game = new Game();
+
+        if (g1 == (game.ran)) {
+            System.out.println("Player 1 got it!");
+        } else if (g2 == (game.ran)) {
+            System.out.println("Player 2 got it!");
+        } else if (g3 == (game.ran)) {
+            System.out.println("Player 3 got it!");
+        } else {
+            System.out.println("The target num was: " + game.ran);
+        }
+
+        sc.close();
+
+    }
 }
 
