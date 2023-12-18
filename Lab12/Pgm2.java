@@ -91,3 +91,84 @@ Arrays.sort(book, new BookComparator());
 sc.close();
     }
 }
+
+
+// Method 2:
+
+import java.util.*;
+
+class Book implements Comparable<Book> {
+    private String name;
+    private double cost;
+
+    Book(String name, double cost) {
+        this.name = name;
+        this.cost = cost;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public int compareTo(Book bk) {
+
+        return this.name.compareTo(bk.name);
+    }
+}
+
+class GeneralizedSearch {
+    public static boolean search(Book[] arr, Book item) {
+
+        for (Book b1 : arr) {
+            if (b1.getName().equals(item)) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+}
+
+class A implements Comparator<Book> {
+
+    public int compare(Book b1, Book b2) {
+        if ((b1.getCost()) > (b2.getCost())) {
+            return 1;
+        }
+
+        else if (b1.getCost() == b2.getCost()) {
+            return 0;
+        } else {
+            return -1;
+        }
+    }
+}
+
+class pgm {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        Book b1 = new Book("Kelly", 200.09);
+        Book b2 = new Book("Key", 200.33);
+        Book b3 = new Book("Kell", 200.24);
+        Book[] arr = { b1, b2, b3 };
+        System.out.println("Enter bk name:");
+        String newBook = sc.nextLine();
+        for (Book B : arr) {
+            if (B.getName().equals(newBook)) {
+                System.out.println("Book found!");
+                System.out.println(B.getName());
+                System.out.println(B.getCost());
+                break;
+            } else {
+                System.out.println("Book not found!");
+            }
+        }
+        Arrays.sort(arr, new A());
+        sc.close();
+
+    }
+}
