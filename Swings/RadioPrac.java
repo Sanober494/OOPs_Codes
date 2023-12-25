@@ -48,7 +48,7 @@ class Radio extends JFrame {
 
 }
 
-public class newpgm {
+public class RadioPrac {
     public static void main(String args[]) {
 
         Radio r = new Radio();
