@@ -27,6 +27,12 @@ class Radio extends JFrame {
         add(r2);
         add(c1);
         add(c2);
+        /*
+        event on checkbox can also be added, the code would be the following:
+        c2.addItemListner(new ItemListner(){
+        public void itemStateChanged(ItemEvent e){System.out.println("Singer");}
+        })
+        */
         add(c3);
         add(b);
         add(l);
