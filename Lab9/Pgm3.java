@@ -12,10 +12,7 @@ public class Pgm3 {
         System.out.print("Enter the phone number: ");
         String phoneNumber = scanner.nextLine();
 
- 
-        scanner.close();
-
-  
+        scanner.close();  
         identifyPhoneNumber(phoneNumber);
     }
 
